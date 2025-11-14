@@ -1,0 +1,16 @@
+[Unit]
+Description=Atom Shellos (ASH)
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ash run --session
+ExecReload=/usr/bin/pkill -USR1 -x ash
+Restart=always
+RestartSec=2
+TimeoutStopSec=10
+
+[Install]
+WantedBy=graphical-session.target
