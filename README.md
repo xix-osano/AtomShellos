@@ -1,4 +1,4 @@
-# DankMaterialShell
+# AtomShellos
 
 <div align="center">
   <a href="https://danklinux.com">
